@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Seguimiento de Duchas de Emergencia</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .header-container {
+      text-align: center;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button-container button {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-container">
+      <p>&nbsp;</p>
+      <h1><img src="https://th.bing.com/th/id/R.e560a4a38d8758a7447302a8d0ffe9ff?rik=3ITNb6aJsrQaUA&amp;pid=ImgRaw&amp;r=0" alt="" width="464" height="116"></h1>
+    </div>
+  <div class="container">
+    <h2 class="title">Seguimiento de Duchas de Emergencia</h2>
+    <form id="checklist-form">
+      <label for="operatorSelect" class="label">Operador:</label>
+      <select id="operatorSelect" class="select" name="operator">
+        <option value="Operador 1">Operador 1</option>
+        <option value="Operador 2">Operador 2</option>
+        <option value="Operador 3">Operador 3</option>
+        <option value="Operador 4">Operador 4</option>
+        <option value="Operador 5">Operador 5</option>
+        <!-- Agrega más opciones según sea necesario -->
+      </select>
+      <!-- Lista de Chequeo -->
+      <h3 class="subtitle">Lista de Chequeo:</h3>
+      <div id="checklist-container">
+        <!-- Los campos de la lista de chequeo se generarán aquí dinámicamente -->
+      </div>
+      <!-- Campo para acciones correctivas propuestas -->
+      <label for="actionsTextarea" class="label">Acciones correctivas propuestas:</label>
+      <textarea id="actionsTextarea" class="textarea" rows="4" cols="50" maxlength="1000"></textarea>
+      <!-- Botón para enviar el resumen por correo -->
+      <button type="button" class="summary-button" onclick="sendSummaryEmail()">Enviar Resumen por Correo</button>
+     <!-- Botón para habilitar la cámara y tomar fotografías -->
+      <button type="button" class="camera-button" id="cameraButton">Tomar Fotografía</button>
+      <img id="photo" class="photo" style="display: none;">
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
