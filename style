@@ -1,0 +1,132 @@
+body {
+  font-family: Calibri, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #ccc;
+  border-radius: 30px;
+  background-color: #f7f7f7;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  margin-top: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.select,
+.textarea {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.checklist-item {
+  margin-bottom: 20px;
+}
+
+.checklist-item label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.checklist-item input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checklist-item input[type="checkbox"] + .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.checklist-item input[type="checkbox"]:checked + .checkmark {
+  background-color: #2196f3;
+}
+
+.checklist-item .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checklist-item input[type="checkbox"]:checked + .checkmark:after {
+  display: block;
+}
+
+.checklist-item .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.summary-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.summary-button:hover {
+  background-color: #45a049;
+}
+.camera-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.camera-button:hover {
+  background-color: #45a049;
+}
