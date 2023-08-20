@@ -261,7 +261,21 @@ function sendSummaryEmail() {
   // Abrir el cliente de correo predeterminado con los campos prellenados
   const recipientEmails = [
     "francisco.bano@masolgruppo.com",
-    "pedro.montero@masolgruppo.com"
+    "pedro.montero@masolgruppo.com",
+    "alberto.besada@masolgruppo.com",
+    "inmaculada.guzman@masolgruppo.com",
+    "pedro.barcelona@masolgruppo.com",
+    "lorenzo.ayala@masolgruppo.com",
+    "joseluis.galban@masolgruppo.com",
+    "simondavid.diaz@masolgruppo.com",
+    "francisco.leal@masolgruppo.com",
+    "francisco.mendez@masolgruppo.com",
+    "adolfo.celdran@masolgruppo.com",
+    "gaspar.nogales@masolgruppo.com",
+    "diego.manzanera@masolgruppo.com",
+    "juan.garcia@masolgruppo.com",
+    "juan.alcaraz@masolgruppo.com",
+    "fernando.moreno@masolgruppo.com"
   ];
   const emailSubject = `Revisión Duchas de Seguridad - ${dateTime} - Realizada por ${operator}`;
   const mailtoLink = `mailto:${recipientEmails.join(",")}?subject=${encodeURIComponent(
